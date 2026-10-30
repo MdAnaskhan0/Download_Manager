@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "VidGrab - Video Downloader",
+  "version": "0.1.0",
+  "description": "Detects videos on any page and sends them to the VidGrab desktop downloader.",
+  "permissions": ["webRequest", "nativeMessaging", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "scripts": ["background.js"] },
+  "action": { "default_title": "VidGrab", "default_popup": "popup.html" },
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["content.js"], "all_frames": true, "run_at": "document_idle" }
+  ],
+  "browser_specific_settings": {
+    "gecko": { "id": "vidgrab@local.dev", "strict_min_version": "115.0" }
+  }
+}

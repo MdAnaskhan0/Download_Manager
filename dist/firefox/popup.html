@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  body{font:13px system-ui,sans-serif;width:380px;margin:0;padding:10px;color:#222}
+  h3{margin:10px 0 6px;font-size:13px}
+  .row{display:flex;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid #eee}
+  .row .info{flex:1;min-width:0}
+  .row .t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .s{color:#777;font-size:11px}
+  button{background:#1a73e8;color:#fff;border:0;border-radius:5px;padding:5px 10px;cursor:pointer}
+  button.sec{background:#eee;color:#222}
+  progress{width:100%}
+  #msg{color:#b00020;margin:6px 0;min-height:1em}
+  .badge{display:inline-block;background:#eef3fd;color:#1a56b0;border-radius:3px;padding:0 5px;font-size:10px;margin-right:4px}
+</style>
+<h3>Detected on this page</h3>
+<div id="found"></div>
+<div style="margin-top:8px"><button id="ytdlp" class="sec">Download whole page with yt-dlp</button></div>
+<div id="msg"></div>
+<h3>Downloads <button id="folder" class="sec" style="float:right">Open folder</button></h3>
+<div id="jobs"></div>
+<script src="popup.js"></script>
