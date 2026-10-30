@@ -1,9 +1,4 @@
-<#
- Registers the native messaging host for Brave and Firefox (current user, no admin needed).
- Usage:
-   .\install.ps1 -BraveExtensionId abcdefghijklmnopabcdefghijklmnop
-   .\install.ps1 -Uninstall
-#>
+
 param(
   [string]$BraveExtensionId = "",
   [string]$FirefoxExtensionId = "vidgrab@local.dev",

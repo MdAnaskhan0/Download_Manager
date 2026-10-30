@@ -1,7 +1,4 @@
-// Download engine. One process per job:  node engine.js <jobfile.json>
-//  file  -> multi-connection ranged download (8 connections, 4 MB pieces)
-//  hls / dash -> ffmpeg
-//  ytdlp -> yt-dlp on the page URL
+
 const fs = require("fs"), path = require("path"), os = require("os");
 const { spawn } = require("child_process");
 
